@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_level">
+        <item>4 dot difference</item>
+        <item>3 dot difference</item>
+        <item>2 dot difference</item>
+        <item>1 dot difference</item>
+    </string-array>
+
+</resources>

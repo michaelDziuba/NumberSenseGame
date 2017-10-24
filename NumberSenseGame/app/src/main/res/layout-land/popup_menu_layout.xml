@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="#C0FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/popupElement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="30dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/header"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/headerTextView"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/popupLinearLayout"
+            android:layout_below="@id/headerTextView"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time to show dots"
+                android:id="@+id/textView1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timeRadioGroup"
+                android:layout_marginBottom="15dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:clickable="true">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 seconds"
+                    android:textStyle="bold"
+                    android:id="@+id/timeRadioButton1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 seconds"
+                    android:textStyle="bold"
+                    android:id="@+id/timeRadioButton2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 seconds"
+                    android:textStyle="bold"
+                    android:id="@+id/timeRadioButton3" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="forever"
+                    android:textStyle="bold"
+                    android:id="@+id/timeRadioButton4" />
+
+            </RadioGroup>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game sounds On"
+                android:textStyle="bold"
+                android:checked="true"
+                android:id="@+id/soundsCheckBox"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="44dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Training range"
+                android:id="@+id/textView2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dotsRadioGroup"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:clickable="true">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9 - 5 dots"
+                    android:textStyle="bold"
+                    android:id="@+id/dotsRadioButton1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 - 7 dots"
+                    android:textStyle="bold"
+                    android:id="@+id/dotsRadioButton2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13 - 9 dots"
+                    android:textStyle="bold"
+                    android:id="@+id/dotsRadioButton3" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 - 11 dots"
+                    android:textStyle="bold"
+                    android:id="@+id/dotsRadioButton4" />
+
+            </RadioGroup>
+
+
+
+        </GridLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/popupOKButton"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/popupLinearLayout"/>
+    </RelativeLayout>
+</LinearLayout>
+

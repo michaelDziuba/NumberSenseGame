@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Math Brain Train</string>
+
+    <string name="about_text">
+        The purpose of this app is to improve your intuition for numbers and make you better at Math.\n\n
+
+        It\'s based on a Johns Hopkins University study published in the Journal of Experimental Child Psychology  (Volume 147, July 2016, Pages 82–99).\n\n
+
+        The results of this study showed that improving intuition for numbers caused an improvement in Math ability.\n\n
+
+        You can read about this study at the link below.  It includes a short YouTube video that shows you how this study was done.\n
+        http://www.eurekalert.org/pub_releases/2016-06/jhu-asn061516.php
+
+    </string>
+
+</resources>
