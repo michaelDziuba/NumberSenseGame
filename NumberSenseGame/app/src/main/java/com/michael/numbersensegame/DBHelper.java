@@ -65,7 +65,9 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + tableName + " WHERE id=" + id + ";", null);
         cursor.moveToFirst();
-        return cursor.getInt(cursor.getColumnIndex(columnName));
+        int tableValue = cursor.getInt(cursor.getColumnIndex(columnName));
+        cursor.close();
+        return tableValue;
     }
 
     public boolean isDatabaseExists(Context context, String dbName) {

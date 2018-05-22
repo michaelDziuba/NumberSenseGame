@@ -17,7 +17,6 @@
         android:orientation="vertical"
         tools:context="com.michael.numbersensegame.MainActivity">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,8 +25,7 @@
             android:background="@drawable/header"
             android:padding="5dp"
             android:elevation="8dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -41,8 +39,7 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="25dp"
-                android:layout_weight="2"
-                />
+                android:layout_weight="2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -58,10 +55,7 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="25dp"
-                android:layout_weight="1"
-                />
-
-
+                android:layout_weight="1" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -72,17 +66,14 @@
                 android:layout_weight="1"
                 android:id="@+id/menuImageButton" />
 
-
         </LinearLayout>
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:layout_marginBottom="@dimen/activity_vertical_margin">
-
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -164,7 +155,6 @@
 
         </LinearLayout>
 
-
 </LinearLayout>
 
         <LinearLayout
@@ -176,24 +166,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageViewLeft"
-                android:background="#FFFFFF"
-                />
-
-
+                android:background="#FFFFFF" />
 
            <Space
                 android:layout_width="0dp"
                 android:layout_height="250dp"
                 android:layout_weight="1"/>
 
-
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageViewRight"
-                android:background="#FFFFFF"
-                />
+                android:background="#FFFFFF" />
 
         </LinearLayout>
 
@@ -202,21 +186,20 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginTop="-8dp"
     android:padding="@dimen/activity_vertical_margin"
     android:background="@drawable/control_panel">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
             android:orientation="horizontal">
 
-
-                        <Space
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="4"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -226,17 +209,12 @@
                 android:textColor="#000000"
                 android:id="@+id/nextButton"
                 android:background="@drawable/header"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1" />
 
-
-                       <Space
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="4"/>
-
-
-
+           <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"/>
 
         </LinearLayout>
 
@@ -245,7 +223,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="@dimen/activity_vertical_margin">
+            android:layout_marginBottom="8dp">
 
             <Button
                 android:layout_width="0dp"
@@ -255,8 +233,7 @@
                 android:textColor="#000000"
                 android:id="@+id/blueButton"
                 android:background="@drawable/blue_button"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -40,6 +40,7 @@ public class CustomAdapter<T> extends ArrayAdapter<T> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        super.getView(position, convertView, parent);
 
         View view = super.getView(position, convertView, parent);
         TextView text = (TextView) view.findViewById(R.id.gameLevelTextViewSpinner);

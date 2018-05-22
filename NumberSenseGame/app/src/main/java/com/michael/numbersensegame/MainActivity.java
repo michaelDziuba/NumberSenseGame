@@ -140,7 +140,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     final Runnable run =  new Runnable() {
         @Override
         public void run() {
-            Log.i("handler2", "ran");
             canvasLeft.drawColor(Color.WHITE);
             canvasRight.drawColor(Color.WHITE);
             imageViewLeft.setImageBitmap(bitmapLeft);
@@ -152,7 +151,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       getSupportActionBar().hide();
 
         r = new Random(System.currentTimeMillis());
 
@@ -218,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 default: displayTimeCode = 3; break;
             }
 
-            isSound = dbHelper.getTableValue(TABLE_NAME, IS_SOUND, 0) == 1 ? true : false;
+            isSound = dbHelper.getTableValue(TABLE_NAME, IS_SOUND, 0) == 1;
 
             maxDotsNumber = dbHelper.getTableValue(TABLE_NAME, MAX_DOTS, 0);
 
