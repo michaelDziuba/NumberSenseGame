@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.michael.numbersensegame"
-        minSdkVersion 22
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 2
         versionName "1.1"
